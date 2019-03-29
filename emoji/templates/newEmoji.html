@@ -1,0 +1,37 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/newEmoji.css' %}">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}">
+    <title>{{ name }}</title>
+    {#    兼容IE#}
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+</head>
+
+<body>
+<a href="{% url 'emoji:index' %}">
+    <div id="home">
+    </div>
+</a>
+
+{{ user }}
+
+<div id="img-div">
+    <img id="emoji" src="{% url 'emoji:process_template' material text font_size color font None%}">
+</div>
+
+<a  href="{% url 'emoji:process_template' material text font_size color font user.email%}">
+    <button id="save-button">保存</button>
+</a>
+
+<a download="{{ file }}"
+   href="{% url 'emoji:process_template' material text font_size color font None%}">
+    <button id="download-button">下载</button>
+</a>
+
+
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/common.js' %}"></script>
+<script src="{% static 'js/newEmoji.js' %}"></script>
+</body>

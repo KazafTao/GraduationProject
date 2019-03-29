@@ -1,0 +1,33 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/detail.css' %}">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}">
+    <title>{{ name }}</title>
+    {#    兼容IE#}
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+</head>
+
+<body>
+<a href="{% url 'emoji:index' %}">
+    <div id="home">
+    </div>
+</a>
+
+<div id="title">{{ name }}</div>
+
+<div id="series-div">
+    {% for emoji in emojis %}
+        <div class="emoji-div">
+            <span>
+                <img class="emoji" src="{% static emoji.path %}">
+            </span>
+        </div>
+    {% endfor %}
+</div>
+
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/common.js' %}"></script>
+<script src="{% static 'js/detail.js' %}"></script>
+</body>

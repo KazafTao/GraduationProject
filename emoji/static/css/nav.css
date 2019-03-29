@@ -1,0 +1,110 @@
+.bars {
+    width: 60px;
+    height: 60px;
+    /*background: white;*/
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    z-index: 1;
+    border-right: 1px solid rgba(0,0,0,20);
+}
+
+.bars span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #262626;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: calc(50% - 15px);
+    transition: .2s;
+}
+
+.bars span:nth-child(1) {
+    transform: translateY(-10px);
+}
+
+.bars span:nth-child(3) {
+    transform: translateY(10px);
+}
+
+.bars.active span:nth-child(1) {
+    /*控制第一个span顺时针旋转45度*/
+    transform: translateY(0px) rotate(-45deg);
+}
+
+.bars.active span:nth-child(3) {
+    /*控制第三个span逆时针旋转45度*/
+    transform: translateY(0px) rotate(45deg);
+}
+
+.bars.active span:nth-child(2) {
+    transform: translateY(-100%);
+    /*控制第二个span隐藏*/
+    opacity: 0;
+}
+
+/*这样就可以形成一个关闭图标*/
+.nav {
+    height: 60px;
+    background: #dde7f2;
+    padding: 0px;
+    margin: 0px;
+    transition: .5s;
+}
+
+.nav.active {
+    transform: translate(-100%);
+    transition: .5s;
+}
+
+.nav ul {
+    float: right;
+    display: flex;
+    /*可以让父元素内的子元素排成一行*/
+    list-style: none;
+    padding: 0px 20px 0px 0px;
+    margin: 0px;
+}
+
+.nav ul li {
+    border-right: 1px solid rgba(0, 0, 0, .2);
+}
+
+.nav ul li:last-child {
+    border-right: none;
+}
+
+.nav ul li a {
+    line-height: 60px;
+    text-decoration: none;
+    color: #262626;
+    padding: 0 20px;
+    display: block;
+}
+
+.nav ul li a:hover {
+    background: #b9bbdf;
+    color: #fff;
+}
+
+/*这里用媒体查询来实现响应式的效果*/
+@media screen and (max-width: 640px) {
+    .nav {
+        /*指的是在手机上视口有多高，这个就有多高*/
+        height: 100vh;
+    }
+
+    .nav ul {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .nav ul li {
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0 .2);
+    }
+}

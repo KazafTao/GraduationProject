@@ -1,0 +1,32 @@
+body {
+    background-color: #fef0ff;
+    text-align: center;
+}
+
+#main-div {
+    background-color: #d6c8ff;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 15%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 5px;
+}
+
+div.card {
+    width: 150px;
+    height: 170px;
+}
+
+div.card>img {
+    margin: 10px;
+    margin-bottom: 0px;
+    width: 150px;
+    height: 150px;
+}
+
+.title {
+    background-color: #c79ecf;
+    margin-left: 10px;
+    width: 150px;
+}

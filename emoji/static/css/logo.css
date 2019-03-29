@@ -1,0 +1,22 @@
+#logo-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 610px;
+    height: 150px;
+    position: relative;
+    /*top: 50px;*/
+}
+
+#slogan {
+    position: relative;
+    width: 450px;
+    height: 150px;
+}
+
+#logo {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 5px;
+}

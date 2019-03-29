@@ -1,0 +1,63 @@
+{% load static %}
+<head>
+    <title>{{ keyword }}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/search.css' %}">
+{#    <link rel="stylesheet" href="{% static 'css/page-nav.css' %}">#}
+    <link rel="stylesheet" href="{% static 'css/result.css' %}">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}">
+    {#    兼容IE#}
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+</head>
+
+<a href="{% url 'emoji:index' %}">
+    <div id="home">
+    </div>
+</a>
+
+<div id="search-type-div">
+    <div onclick="submit($(this).text())">全部</div>
+    <div onclick="submit($(this).text())">静态图片</div>
+    <div onclick="submit($(this).text())">gif</div>
+</div>
+
+<div class="search-box">
+    <form action="{% url 'emoji:search' %}" method="get" id="search-from">
+        {% csrf_token %}
+        <input type="text" name="search-type" value="all" id="search-type">
+        <input class="search-input-text" type="text" name="content"
+               value="{{ keyword }}" id="search-input">
+        <input class="search-input-btn" type="submit" value="" name="search_btn" id="search-btn">
+    </form>
+</div>
+
+<div class="wrapper">
+    {% for emoji in emoji_list %}
+        <div class="img-div">
+            <span>
+                <img class="emoji" src="{% static emoji %}" alt="emoji">
+            </span>
+        </div>
+    {% endfor %}
+</div>
+
+{#<div id="page-div">#}
+{#    {% for i in pages %}#}
+{#        <a href="{% url 'emoji:asciiEmoji' i %}">#}
+{#            <div class="page">{{ forloop.counter }}</div>#}
+{#        </a>#}
+{#    {% endfor %}#}
+{#</div>#}
+{##}
+{#<footer></footer>#}
+
+<div class="suggest" id="search-suggest">
+    <ul id="suggest-ul">
+    </ul>
+</div>
+
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/common.js' %}"></script>
+<script src="{% static 'js/result.js' %}"></script>
+

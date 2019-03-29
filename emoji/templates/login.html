@@ -1,0 +1,13 @@
+{% extends 'base-form.html' %}
+{% block form %}
+    <form id="login-form" action="{% url 'emoji:validate' %}" method="get">
+        {% csrf_token %}
+        <table>
+            {{ form }}
+        </table>
+        <input type="submit" value="立即登录" id="login-button"><br>
+        <a href="{% url 'emoji:register' %}">
+            <input type="button" value="注册" id="register-button">
+        </a>
+    </form>
+{% endblock %}

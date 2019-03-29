@@ -1,0 +1,42 @@
+body {
+    background-color: #defcf9;
+}
+
+#bg-div {
+    background-color: #cadefc;
+    border: #5d5d5a 1px solid;
+    width: 700px;
+    height: 500px;
+    display: flex;
+    /*子div水平居中*/
+    justify-content: center;
+    /*子div垂直居中*/
+    /*align-items: center;*/
+}
+
+#logo-box {
+    margin-top: 20px;
+}
+
+#form-div {
+    text-align: center;
+}
+
+input {
+    width: 250px;
+    height: 40px;
+}
+
+#login-button {
+    margin-top: 20px;
+    height: 60px;
+    background-color: #c3bef0;
+}
+
+#register-button {
+    margin-top: 40px;
+    width: 250px;
+    height: 60px;
+    background-color: #cca8e9;
+}
+

@@ -1,0 +1,43 @@
+body {
+    background-color: #dff4f3;
+}
+
+#title {
+    background-color: #878ecd;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 200%;
+}
+
+#series-div {
+    margin: 0 auto;
+    background-color: #b9bbdf;
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3px;
+}
+
+.emoji-div {
+    display: table;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    background-color: #dde7f2;
+    width: 150px;
+    height: 150px;
+}
+
+.emoji-div>span {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+img.emoji {
+    width: 120px;
+    height: 120px;
+}

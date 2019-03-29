@@ -1,0 +1,52 @@
+form {
+    background: white;
+    /*margin-left: 15px;*/
+    padding: 5px;
+    float: left;
+}
+
+.search-input-text {
+    border: 0;
+    height: 30px;
+    width: 400px;
+    float: left;
+    /*去蓝色高亮框*/
+    outline: none;
+}
+
+.search-input-btn {
+    border: 0;
+    background-image: url("../images/search-btn.png");
+    width: 25px;
+    height: 25px;
+    float: left;
+}
+
+/*搜索框下拉菜单显示效果*/
+.suggest {
+    background: white;
+}
+
+.suggest ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.suggest ul li {
+    padding: 3px;
+    font-size: 14px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.suggest ul li:hover {
+    text-decoration: underline;
+    background: lightgray;
+}
+
+#search-suggest {
+    display: none;
+    border: 1px solid gray;
+    width: 400px;
+}

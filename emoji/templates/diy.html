@@ -1,0 +1,67 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/progress.css' %}">
+    <link rel="stylesheet" href="{% static 'css/diy.css' %}">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}">
+    <title>DIY</title>
+    {#    兼容IE#}
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+</head>
+
+<body>
+
+<a href="{% url 'emoji:index' %}">
+    <div id="home">
+    </div>
+</a>
+
+<div id="main-div">
+    <form action="{% url 'emoji:submit' %}" method="get" id="form">
+        <div id="material-div">
+            <img src="{% static img %}" id="material">
+            <div id="text" contenteditable="true">点我输入文字</div>
+        </div>
+        <input type="text" name="material" hidden="hidden" id="hidden-material">
+        <input type="text" name="text" hidden="hidden" id="hidden-text">
+        <input type="text" name="font-size" hidden="hidden" id="hidden-font-size">
+        <input type="text" name="color" hidden="hidden" id="hidden-color">
+        <input type="text" name="font" hidden="hidden" id="hidden-font">
+        <div id="toolbar">
+            <div id="text-label">字号</div>
+            <div class="progress">
+                <div class="progress_bg">
+                    <div class="progress_bar"></div>
+                </div>
+                <div class="progress_btn"></div>
+                <div class="text">0%</div>
+            </div>
+
+            <div id="color-label">颜色</div>
+            <div id="color-div">
+                {% for color in colors %}
+                    <div class="color"
+                         style="background-color: {{ color }}"
+                         id="{{ color }}" onclick="setTextColor('{{ color }}')"></div>
+                {% endfor %}
+            </div>
+
+            <div id="font-label">字体</div>
+            <div id="font-div">
+                {% for font in fonts %}
+                    <div class="font" style="font-family: {{ font }}">字</div>
+                {% endfor %}
+            </div>
+
+            <input type="button" value="生成表情" id="diy-button">
+        </div>
+    </form>
+</div>
+
+
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/common.js' %}"></script>
+<script src="{% static 'js/progress.js' %}"></script>
+<script src="{% static 'js/diy.js' %}"></script>
+</body>

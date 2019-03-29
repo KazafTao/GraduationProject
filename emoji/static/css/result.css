@@ -1,0 +1,57 @@
+#search-type-div {
+    display: table;
+    border-spacing: 10px;
+}
+
+#search-type-div > div {
+    background-color: #b9bbdf;
+    height: 25px;
+    line-height: 25px;
+    display: table-cell;
+    padding: 0 10px;
+    /*border: 1px black solid;*/
+}
+
+/*搜索框定位*/
+.search-box {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+/*定位下拉建议*/
+#search-suggest {
+    position: absolute;
+    top: 90px;
+    left: 50px;
+}
+
+/*让表情包排成一个grid*/
+div.wrapper {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 3px;
+}
+
+.img-div {
+    width: 150px;
+    height: 150px;
+    background-color: #dde7f2;
+    text-align: center;
+    display: table;
+}
+
+.img-div > span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*每个表情包的样式*/
+img.emoji {
+    width: 120px;
+    height: 120px;
+}

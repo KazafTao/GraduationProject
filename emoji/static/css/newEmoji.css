@@ -1,0 +1,25 @@
+body {
+    background-color: #f9f7f7;
+}
+
+#img-div {
+    margin-top: 5%;
+    /*border: 1px solid black;*/
+}
+
+
+#save-button {
+    background-color: #dbe2ef;
+    /*color: #4d727e;*/
+    width: 8%;
+    height: 8%;
+    font-size: xx-large;
+}
+
+#download-button {
+    background-color: #3f72af;
+    /*color: #4d727e;*/
+    width: 8%;
+    height: 8%;
+    font-size: xx-large;
+}

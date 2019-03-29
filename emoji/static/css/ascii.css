@@ -1,0 +1,83 @@
+body {
+    /*background-image: url("../images/asciiEmojiBg.png");*/
+    background-color: #defcf9;
+}
+
+#logo-box {
+    position: absolute;
+    margin: 0 auto;
+    top: 100px;
+    left: 400px;
+}
+
+#logo {
+    float: left;
+    /*background: transparent;*/
+    background-color: #cadefc;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#search-input {
+    width: 600px;
+}
+
+#tag-div {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 3px;
+}
+
+.tag {
+    margin: 10px;
+    width: 100px;
+    height: 60px;
+}
+
+.tag-name {
+    margin: 8px;
+    margin-bottom: 0px;
+    font-size: 120%;
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #cca8e9;
+    overflow: hidden;
+}
+
+.tag-hit {
+    display: block;
+    margin-left: 8px;
+    background-color: #c3bef0;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+}
+
+
+.asciiEmoji {
+    font-size: 28px;
+}
+
+#result-wrapper {
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    /*width: 1000px;*/
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 3px;
+}
+
+div.asciiEmoji {
+    display: block;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    margin: 3px;
+    /*border: 1px solid black;*/
+    background-image: -webkit-linear-gradient(top, #c3bef0 1%, #cca8e9 100%);
+    overflow: hidden;
+}

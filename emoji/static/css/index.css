@@ -1,0 +1,18 @@
+#logo-box {
+    position: absolute;
+    top: 125px;
+    left: 400px;
+}
+
+/*搜索框定位*/
+#search-box {
+    position: absolute;
+    top: 335px;
+    left: 550px;
+}
+
+/*错误信息提示div*/
+#error-div {
+    /*z-index: 1;*/
+}
+

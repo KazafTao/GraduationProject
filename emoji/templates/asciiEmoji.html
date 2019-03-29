@@ -1,0 +1,76 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/search.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/page-nav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/ascii.css' %}">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}">
+    <title>Ascii Emoji</title>
+    {#    兼容IE#}
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+</head>
+<body>
+
+<a href="{% url 'emoji:index' %}">
+    <div id="home">
+    </div>
+</a>
+
+<div id="logo-box">
+    <div id="logo">
+        Σ(ﾟДﾟ；≡；ﾟдﾟ)
+    </div>
+</div>
+{#  定位搜索框#}
+<div id="search-box">
+    <form action="{% url 'emoji:asciiEmojiSearch' %}" method="get" id="search-from">
+        {% csrf_token %}
+        <input class="search-input-text" type="text" name="content" placeholder="随便输什么都行" id="search-input">
+        <input class="search-input-btn" type="submit" value="" name="search_btn" id="search-btn">
+    </form>
+</div>
+{#搜索建议列表#}
+<div class="suggest" id="search-suggest">
+    <ul id="suggest-ul">
+    </ul>
+</div>
+
+{% if tag_list %}
+    <div id="tag-div">
+        {% for tag in tag_list %}
+            <div class="tag">
+                <div class="tag-name">{{ tag }}</div>
+                <div class="tag-hit">{{ tag.hits }}</div>
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}
+
+{% if error_message %}
+    <div id="error-div">
+        <p id="error_message">{{ error_message }}</p>
+    </div>
+{% endif %}
+
+{% if keyword %}
+    <div id="keyword">{{ keyword }}</div>
+    <div id="result-wrapper">
+        {% for emoji in list %}
+            <div class="asciiEmoji">{{ emoji }}</div>
+        {% endfor %}
+    </div>
+{% endif %}
+
+<div id="page-div">
+    {% for i in pages %}
+        <a href="{% url 'emoji:asciiEmoji' i %}">
+            <div class="page">{{ forloop.counter }}</div>
+        </a>
+    {% endfor %}
+</div>
+<footer></footer>
+</body>
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/common.js' %}"></script>
+<script src="{% static 'js/asciiEmoji.js' %}"></script>

@@ -1,0 +1,36 @@
+body {
+    background-color: #fff4e3;
+}
+
+#logo-box {
+    position: absolute;
+    top: -30px;
+    left: 400px;
+}
+
+#series-div {
+    width: 800px;
+    border: 1px black solid;
+    display: inline;
+}
+
+div.series-name {
+    background-color: #ffcdab;
+    line-height: 40px;
+    height: 40px;
+    text-align: left;
+    padding-left: 50px;
+    font-size: 120%;
+}
+
+div.element-div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+}
+
+img.series-element {
+    margin-left: 30px;
+    width: 100px;
+    height: 100px;
+}

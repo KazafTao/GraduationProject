@@ -1,0 +1,9 @@
+body {
+    background: #dff4f3;
+    text-align: center;
+}
+
+#error_message {
+    color: red;
+    font-size: 120%;
+}

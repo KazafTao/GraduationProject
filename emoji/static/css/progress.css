@@ -1,0 +1,38 @@
+.progress {
+    position: relative;
+    width: 300px;
+    margin: 100px auto;
+}
+
+.progress_bg {
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #f2f2f2;
+}
+
+.progress_bar {
+    background: #5FB878;
+    width: 0;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.progress_btn {
+    width: 20px;
+    height: 50px;
+    border-radius: 5px;
+    position: absolute;
+    background: #fff;
+    left: 0px;
+    margin-left: -10px;
+    top: -10px;
+    cursor: pointer;
+    border: 1px #ddd solid;
+    box-sizing: border-box;
+}
+
+.progress_btn:hover {
+    border-color: #71c9ce;
+}

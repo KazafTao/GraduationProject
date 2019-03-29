@@ -1,0 +1,21 @@
+#page-div {
+    display: table;
+}
+
+#page-div > a {
+    text-decoration: none;
+}
+
+div.page {
+    display: table-cell;
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #ffa45c;
+}
+
+footer {
+    background-color: #5d5d5a;
+    width: 110%;
+    height: 30px;
+}
