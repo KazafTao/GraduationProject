@@ -94,7 +94,6 @@ def search(request):
             res = search.query('match', type=keyword).query('match', filetype='gif').execute()
             res = search.query('match', type=keyword).query('match', filetype='gif')[0:res.hits.total].execute()
 
-        # print(res.to_dict())
         # 把查询结果以字典的形式返回，并提取出需要的数据
         dict = res.to_dict()['hits']['hits']
         # 将提取的数据添加到emoji_list
@@ -117,7 +116,6 @@ def ajax(request):
     search = Search(using=es, index='emoji', doc_type='emojis')
     # 关键字匹配,并返回至多100个结果
     res = search.query('match', type=request.GET['data']).execute()
-    # print(res)
     # 把查询结果以字典的形式返回，并提取出需要的数据
     dict = res.to_dict()['hits']['hits']
     # 将提取的数据添加到emoji_list
@@ -141,8 +139,6 @@ def asciiAjax(request):
 def asciiEmoji(request, page):
     # 返回数据库里的前30个标签
     tag_per_page = 30
-    # 以点击数为第一关键字，表情数量为第二关键字进行排序
-    # tag_list = Tag.objects.annotate(num_emojis=Count('emojis')).order_by('-num_emojis')
     tag_list = get_list_or_404(Tag)
     pages = range(int(len(tag_list) / tag_per_page))
     return render(request, 'asciiEmoji.html', {

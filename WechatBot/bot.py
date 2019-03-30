@@ -24,18 +24,6 @@ def search(keyword):
     return result
 
 
-def relatedWordRecomend(keyword):
-    result = []
-    es = Elasticsearch(hosts=["120.77.148.37"])
-    search = Search(using=es, index='emoji', doc_type='emojis')
-    res = search.query('match', type=keyword).execute()
-    dict = res.to_dict()['hits']['hits']
-    for item in dict:
-        result.append(item['_source']['type'])
-
-    return result
-
-
 def sendEmoji(msg):
     dir = 'E:/GraduationProject/Crawler/Crawler/datas/emoji'
     images = search(msg['Content'])
