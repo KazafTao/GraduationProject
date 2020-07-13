@@ -112,9 +112,9 @@ STATIC_URL = '/static/'
 
 # 设置表情包目录为staticfile_dir来让django的模板系统加载本地图片
 STATICFILES_DIRS = (
-    "E:\GraduationProject\Crawler\Crawler\datas\emoji",
-    "E:\GraduationProject\Crawler\Crawler\datas\set",
-    "E:\GraduationProject\Crawler\Crawler\datas\material",
+    "../Crawler/Crawler/datas/emoji",
+    "../Crawler/Crawler/datas/set",
+    "../Crawler/Crawler/datas/material",
 )
 
 DEFAULT_CHARSET = "UTF-8"

@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c5887cfc-7639-4c2d-85f3-1e6efd9174a5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Crawler/Crawler/datas/material/北方栖姬手持狼牙棒.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Crawler/Crawler/datas/material/北方栖姬手持狼牙棒.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawler/Crawler/datas/material/张学友doge持烟.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Crawler/Crawler/datas/material/张学友doge持烟.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawler/Crawler/datas/material/金馆长蘑菇头坐着刮风.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Crawler/Crawler/datas/material/金馆长蘑菇头坐着刮风.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawler/Crawler/datas/word_filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawler/Crawler/datas/word_filter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawler/Crawler/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawler/Crawler/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawler/Crawler/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawler/Crawler/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawler/Crawler/spiders/ascii.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawler/Crawler/spiders/ascii.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawler/Crawler/spiders/material.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawler/Crawler/spiders/material.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GraduationProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/GraduationProject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WechatBot/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/WechatBot/bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WechatBot/itchat.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/WechatBot/itchat.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emoji/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/emoji/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emoji/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/emoji/views.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/GraduationProject$main.coverage" NAME="main Coverage Results" MODIFIED="1553684713566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crawler/Crawler" />
+    <SUITE FILE_PATH="coverage/GraduationProject$word_filter.coverage" NAME="word_filter Coverage Results" MODIFIED="1551589754219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crawler/Crawler/datas" />
+    <SUITE FILE_PATH="coverage/GraduationProject$addText.coverage" NAME="addText Coverage Results" MODIFIED="1551934493915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ImageProcessing" />
+    <SUITE FILE_PATH="coverage/GraduationProject$bot.coverage" NAME="bot Coverage Results" MODIFIED="1552268065220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WechatBot" />
+    <SUITE FILE_PATH="coverage/GraduationProject$words.coverage" NAME="words Coverage Results" MODIFIED="1551182112075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dev" />
+    <SUITE FILE_PATH="coverage/GraduationProject$dev.coverage" NAME="dev Coverage Results" MODIFIED="1551368407502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dev" />
+    <SUITE FILE_PATH="coverage/GraduationProject$test.coverage" NAME="test Coverage Results" MODIFIED="1551793799710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WechatBot" />
+    <SUITE FILE_PATH="coverage/GraduationProject$pillow.coverage" NAME="pillow Coverage Results" MODIFIED="1551925995310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ImageProcessing" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Django default" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>HTTPERROR_ALLOWED_CODES</find>
+      <find>$PROJECT_DIR$/..</find>
+      <find>localhost:E:</find>
+      <find>search-box</find>
+      <find>SPLASH_URL</find>
+      <find>DUPEFILTER_CLASS</find>
+      <find>HTTPCACHE_STORAGE</find>
+      <find>RETRY_HTTP_CODES</find>
+      <find>count</find>
+      <find>懒</find>
+      <find>怪我</find>
+      <find>咀嚼</find>
+      <find>高富帅</find>
+      <find>AUTH_USER_MODEL</find>
+      <find>Gradu</find>
+      <find>E:/</find>
+      <find>Gra</find>
+      <find>$PROJECT_DIR$/../../</find>
+      <find>$PROJECT_DIR$/../..</find>
+      <find>.replace('\\', '/')</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>x</replace>
+      <replace>\\f</replace>
+      <replace>localhost</replace>
+      <replace>$PROJECT_DIR$/..</replace>
+      <replace>page_count</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="d5c4052a-e5f9-4f84-9c52-e8971f42885c" />
+  </component>
+  <component name="ProjectId" id="1dq9jOsaBA5OodVIO3cJ6Mv7FTd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Flask-Demo" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\GraduationProject\WechatBot" />
+      <recent name="E:\GraduationProject" />
+      <recent name="E:\GraduationProject\GraduationProject" />
+      <recent name="E:\GraduationProject\emoji\static\css" />
+      <recent name="E:\GraduationProject\emoji\static\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\GraduationProject\ImageProcessing" />
+      <recent name="E:\GraduationProject\emoji\static\js" />
+      <recent name="E:\GraduationProject\emoji\static\css" />
+      <recent name="E:\GraduationProject\dev" />
+      <recent name="E:\GraduationProject\emoji\templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django Server.GraduationProject">
+    <configuration name="addText" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GraduationProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ImageProcessing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ImageProcessing/addText.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="bot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GraduationProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="GraduationProject.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WechatBot" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WechatBot/bot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GraduationProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Crawler/Crawler" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Crawler/Crawler/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pillow" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GraduationProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ImageProcessing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ImageProcessing/pillow.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GraduationProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WechatBot" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WechatBot/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="GraduationProject" type="Python.DjangoServer" factoryName="Django server">
+      <module name="GraduationProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="GraduationProject.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Django Server.GraduationProject" />
+      <item itemvalue="Python.addText" />
+      <item itemvalue="Python.bot" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.pillow" />
+      <item itemvalue="Python.test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.bot" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.addText" />
+        <item itemvalue="Python.pillow" />
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c5887cfc-7639-4c2d-85f3-1e6efd9174a5" name="Default Changelist" comment="" />
+      <created>1548947723970</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1548947723970</updated>
+      <workItem from="1548947815390" duration="1935000" />
+      <workItem from="1548953060497" duration="1107000" />
+      <workItem from="1548989448485" duration="915000" />
+      <workItem from="1549004612621" duration="2802000" />
+      <workItem from="1549017085851" duration="3296000" />
+      <workItem from="1549027500441" duration="3627000" />
+      <workItem from="1549033075706" duration="866000" />
+      <workItem from="1549091530813" duration="5952000" />
+      <workItem from="1549108612966" duration="997000" />
+      <workItem from="1549173791767" duration="364000" />
+      <workItem from="1549181006074" duration="747000" />
+      <workItem from="1549184270161" duration="354000" />
+      <workItem from="1549429619314" duration="2033000" />
+      <workItem from="1549707746347" duration="2734000" />
+      <workItem from="1549765956659" duration="2321000" />
+      <workItem from="1549783704416" duration="1392000" />
+      <workItem from="1549785116784" duration="123000" />
+      <workItem from="1549785392230" duration="198000" />
+      <workItem from="1549892330434" duration="3346000" />
+      <workItem from="1549939529500" duration="1496000" />
+      <workItem from="1549969296872" duration="88000" />
+      <workItem from="1550064083929" duration="510000" />
+      <workItem from="1550120681234" duration="2580000" />
+      <workItem from="1550124106670" duration="2155000" />
+      <workItem from="1550127052586" duration="78000" />
+      <workItem from="1550135695731" duration="106000" />
+      <workItem from="1550139803523" duration="32000" />
+      <workItem from="1550152463322" duration="90000" />
+      <workItem from="1550204356544" duration="193000" />
+      <workItem from="1550219820035" duration="15000" />
+      <workItem from="1550221471797" duration="726000" />
+      <workItem from="1550224995931" duration="341000" />
+      <workItem from="1550229030500" duration="16000" />
+      <workItem from="1550237743472" duration="3920000" />
+      <workItem from="1550278328333" duration="6786000" />
+      <workItem from="1550285142002" duration="507000" />
+      <workItem from="1550294872561" duration="7077000" />
+      <workItem from="1550326210848" duration="1728000" />
+      <workItem from="1550475957763" duration="3422000" />
+      <workItem from="1550479548565" duration="625000" />
+      <workItem from="1550487974155" duration="755000" />
+      <workItem from="1550571611293" duration="2475000" />
+      <workItem from="1550648344564" duration="3771000" />
+      <workItem from="1550654249996" duration="299000" />
+      <workItem from="1550655018437" duration="915000" />
+      <workItem from="1550740072641" duration="1633000" />
+      <workItem from="1550751203239" duration="6522000" />
+      <workItem from="1550821877861" duration="1511000" />
+      <workItem from="1550840030906" duration="218000" />
+      <workItem from="1550840503638" duration="926000" />
+      <workItem from="1550986437753" duration="1401000" />
+      <workItem from="1550989503227" duration="3762000" />
+      <workItem from="1550994654284" duration="716000" />
+      <workItem from="1550998871242" duration="1028000" />
+      <workItem from="1551013057685" duration="4293000" />
+      <workItem from="1551022910376" duration="257000" />
+      <workItem from="1551056204951" duration="9185000" />
+      <workItem from="1551071397171" duration="5171000" />
+      <workItem from="1551076675520" duration="364000" />
+      <workItem from="1551081475731" duration="1338000" />
+      <workItem from="1551083808057" duration="13817000" />
+      <workItem from="1551103058323" duration="4478000" />
+      <workItem from="1551144404123" duration="5005000" />
+      <workItem from="1551153246782" duration="463000" />
+      <workItem from="1551157195320" duration="3783000" />
+      <workItem from="1551165234975" duration="8248000" />
+      <workItem from="1551175901413" duration="1199000" />
+      <workItem from="1551177126541" duration="110000" />
+      <workItem from="1551177258516" duration="3847000" />
+      <workItem from="1551181147187" duration="9440000" />
+      <workItem from="1551230142251" duration="4700000" />
+      <workItem from="1551243358229" duration="5697000" />
+      <workItem from="1551249531920" duration="3719000" />
+      <workItem from="1551254939983" duration="478000" />
+      <workItem from="1551259238494" duration="2913000" />
+      <workItem from="1551264597131" duration="7782000" />
+      <workItem from="1551277421751" duration="7292000" />
+      <workItem from="1551284765413" duration="2385000" />
+      <workItem from="1551314452401" duration="8453000" />
+      <workItem from="1551326124285" duration="9955000" />
+      <workItem from="1551342133792" duration="413000" />
+      <workItem from="1551342653943" duration="1089000" />
+      <workItem from="1551343828291" duration="893000" />
+      <workItem from="1551350363450" duration="16293000" />
+      <workItem from="1551402040210" duration="933000" />
+      <workItem from="1551403326846" duration="14744000" />
+      <workItem from="1551428388394" duration="2826000" />
+      <workItem from="1551433851241" duration="7590000" />
+      <workItem from="1551444210149" duration="2720000" />
+      <workItem from="1551446956167" duration="51000" />
+      <workItem from="1551447027830" duration="8890000" />
+      <workItem from="1551457071316" duration="712000" />
+      <workItem from="1551490091040" duration="2130000" />
+      <workItem from="1551507170221" duration="1916000" />
+      <workItem from="1551588721650" duration="6146000" />
+      <workItem from="1551597738011" duration="277000" />
+      <workItem from="1551602576012" duration="855000" />
+      <workItem from="1551607405365" duration="14851000" />
+      <workItem from="1551625639474" duration="3202000" />
+      <workItem from="1551661645181" duration="8976000" />
+      <workItem from="1551673938520" duration="6096000" />
+      <workItem from="1551683629230" duration="147000" />
+      <workItem from="1551684593935" duration="2845000" />
+      <workItem from="1551689061382" duration="671000" />
+      <workItem from="1551700474211" duration="4198000" />
+      <workItem from="1551706131796" duration="10913000" />
+      <workItem from="1551746689702" duration="1000" />
+      <workItem from="1551746737123" duration="11566000" />
+      <workItem from="1551759827803" duration="3272000" />
+      <workItem from="1551768140553" duration="7883000" />
+      <workItem from="1551776508457" duration="1195000" />
+      <workItem from="1551786223820" duration="15316000" />
+      <workItem from="1551801662337" duration="153000" />
+      <workItem from="1551840396107" duration="994000" />
+      <workItem from="1551850093080" duration="7551000" />
+      <workItem from="1551862743703" duration="1379000" />
+      <workItem from="1551871759545" duration="9195000" />
+      <workItem from="1551885747736" duration="2445000" />
+      <workItem from="1551925102429" duration="1560000" />
+      <workItem from="1551931850938" duration="4663000" />
+      <workItem from="1551943748446" duration="410000" />
+      <workItem from="1551944717081" duration="2781000" />
+      <workItem from="1551956581184" duration="9563000" />
+      <workItem from="1551969669201" duration="458000" />
+      <workItem from="1551970282488" duration="385000" />
+      <workItem from="1551976763982" duration="2567000" />
+      <workItem from="1552013295584" duration="2858000" />
+      <workItem from="1552020699286" duration="4339000" />
+      <workItem from="1552028458791" duration="5120000" />
+      <workItem from="1552034753632" duration="1465000" />
+      <workItem from="1552038160561" duration="6375000" />
+      <workItem from="1552053328940" duration="4123000" />
+      <workItem from="1552061534738" duration="3956000" />
+      <workItem from="1552101136123" duration="711000" />
+      <workItem from="1552108658733" duration="7311000" />
+      <workItem from="1552118732098" duration="757000" />
+      <workItem from="1552120346456" duration="1097000" />
+      <workItem from="1552121512616" duration="1186000" />
+      <workItem from="1552125037930" duration="3151000" />
+      <workItem from="1552133347486" duration="3846000" />
+      <workItem from="1552142767629" duration="2187000" />
+      <workItem from="1552150928080" duration="3959000" />
+      <workItem from="1552202111656" duration="1211000" />
+      <workItem from="1552203396371" duration="685000" />
+      <workItem from="1552265251373" duration="1306000" />
+      <workItem from="1552268012490" duration="743000" />
+      <workItem from="1553132646409" duration="779000" />
+      <workItem from="1553147623488" duration="2101000" />
+      <workItem from="1553168063995" duration="3071000" />
+      <workItem from="1553222943005" duration="1057000" />
+      <workItem from="1553250813625" duration="6959000" />
+      <workItem from="1553261077890" duration="2277000" />
+      <workItem from="1553265130203" duration="1317000" />
+      <workItem from="1553408860597" duration="5528000" />
+      <workItem from="1553416634053" duration="95000" />
+      <workItem from="1553417850906" duration="627000" />
+      <workItem from="1553425007149" duration="1533000" />
+      <workItem from="1553428796484" duration="1395000" />
+      <workItem from="1553430287190" duration="40000" />
+      <workItem from="1553431278297" duration="26000" />
+      <workItem from="1553438614045" duration="2026000" />
+      <workItem from="1553684124854" duration="3109000" />
+      <workItem from="1553740551350" duration="2684000" />
+      <workItem from="1553861139323" duration="282000" />
+      <workItem from="1553861656400" duration="6000" />
+      <workItem from="1553861960748" duration="1915000" />
+      <workItem from="1553867364390" duration="1006000" />
+      <workItem from="1553910284770" duration="2092000" />
+      <workItem from="1553947009961" duration="3872000" />
+      <workItem from="1555138010298" duration="45000" />
+      <workItem from="1555148904227" duration="819000" />
+      <workItem from="1555209846636" duration="87000" />
+      <workItem from="1555210837537" duration="8000" />
+      <workItem from="1555230365557" duration="1979000" />
+      <workItem from="1555232985014" duration="843000" />
+      <workItem from="1555240619517" duration="21000" />
+      <workItem from="1555241396083" duration="620000" />
+      <workItem from="1555290936342" duration="956000" />
+      <workItem from="1555294461049" duration="1157000" />
+      <workItem from="1556336984827" duration="2997000" />
+      <workItem from="1556355206589" duration="1775000" />
+      <workItem from="1556358833044" duration="973000" />
+      <workItem from="1557495568450" duration="3226000" />
+      <workItem from="1557549886217" duration="2390000" />
+      <workItem from="1557559352812" duration="2523000" />
+      <workItem from="1558014885085" duration="126000" />
+      <workItem from="1560587150480" duration="49000" />
+      <workItem from="1563906596328" duration="35000" />
+      <workItem from="1563934264095" duration="1269000" />
+      <workItem from="1564050199497" duration="67000" />
+      <workItem from="1565427985613" duration="1301000" />
+      <workItem from="1590227010146" duration="20894000" />
+      <workItem from="1590312710944" duration="944000" />
+      <workItem from="1591529818625" duration="3902000" />
+      <workItem from="1591708333367" duration="2529000" />
+      <workItem from="1592209547854" duration="32000" />
+      <workItem from="1593141905205" duration="282000" />
+      <workItem from="1593142214227" duration="779000" />
+      <workItem from="1593143348078" duration="877000" />
+      <workItem from="1593144234996" duration="1303000" />
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1553745639015</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1553745639015</updated>
+    </task>
+    <task id="LOCAL-00002" summary="删除多余文件&amp;文件夹">
+      <created>1553867705522</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1553867705522</updated>
+    </task>
+    <task id="LOCAL-00003" summary="删除多余文件&amp;文件夹">
+      <created>1553914970358</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1553914970358</updated>
+    </task>
+    <task id="LOCAL-00004" summary="优化注释">
+      <created>1553915535686</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1553915535686</updated>
+    </task>
+    <task id="LOCAL-00005" summary="删除backup.db">
+      <created>1553915701239</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1553915701239</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <MESSAGE value="删除多余文件&amp;文件夹" />
+    <MESSAGE value="优化注释" />
+    <MESSAGE value="删除backup.db" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除backup.db" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="651" y="294" key="#Notifications" timestamp="1593143826779">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="651" y="294" key="#Notifications/0.0.1536.864@0.0.1536.864" timestamp="1593143826779" />
+    <state x="548" y="173" key="FileChooserDialogImpl" timestamp="1593145963380">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="548" y="173" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1593145963380" />
+    <state width="1493" height="161" key="GridCell.Tab.0.bottom" timestamp="1593145973146">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="161" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1593145973146" />
+    <state width="1493" height="161" key="GridCell.Tab.0.center" timestamp="1593145973146">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="161" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1593145973146" />
+    <state width="1493" height="161" key="GridCell.Tab.0.left" timestamp="1593145973146">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="161" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1593145973146" />
+    <state width="1493" height="161" key="GridCell.Tab.0.right" timestamp="1593145973146">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="161" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1593145973146" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1593143471180">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1593143471180" />
+    <state x="564" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593144162653">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="564" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1593144162653" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Website/urls.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GraduationProject$main.coverage" NAME="main Coverage Results" MODIFIED="1557560563783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crawler/Crawler" />
+    <SUITE FILE_PATH="coverage/GraduationProject$bot.coverage" NAME="bot Coverage Results" MODIFIED="1591708574341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WechatBot" />
+  </component>
+</project>

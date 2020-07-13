@@ -1,2 +1,2 @@
 from scrapy import cmdline
-cmdline.execute('scrapy crawl ascii'.split())
+cmdline.execute('scrapy crawl emoji'.split())

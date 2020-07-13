@@ -199,7 +199,7 @@ def emojiSet(reqeust, page):
         'pages': pages
     })
 
-
+# 获取一个套图所有的图片
 def detail(request, series_name):
     series = get_object_or_404(EmojiSeries, name=series_name)
     emojis = get_list_or_404(SeriesElement, series=series)
@@ -211,7 +211,7 @@ def detail(request, series_name):
 
 @login_required()
 def templates(request, page):
-    template_dir = 'E:\GraduationProject\Crawler\Crawler\datas\material'
+    template_dir = '../Crawler/Crawler/datas/material'
     template_list = os.listdir(template_dir)
     row = 4
     column = 6
@@ -289,7 +289,7 @@ def add_text_to_gif(file, image, text, font, color='black', email='None'):
         frames[0].save(stream, 'GIF', save_all=True, append_images=frames[1:])
         return stream.getvalue()
     else:
-        dir = 'E:\GraduationProject\Crawler\Crawler\datas\\userEmojis'.replace('\\', '/')
+        dir = '../Crawler/Crawler/datas/userEmojis'
         if not os.path.exists('%s/%s' % (dir, email)):
             os.makedirs('%s/%s' % (dir, email))
         path = '%s/%s/%s' % (dir, email, file)
@@ -327,7 +327,7 @@ def process_template(request, material, text, font_size, color, font, email):
             font_path = font_dir + '/' + font + '.ttc'
         # 浏览器的字体大小和图像的字体大小不一致，需要放缩
         defaultFont = ImageFont.truetype(font_path, int(int(font_size) * 2))
-        dir = "E:\GraduationProject\Crawler\Crawler\datas\material"
+        dir = "../Crawler/Crawler/datas/material"
         if material[-3:] == 'gif':
             if email != "None":
                 add_text_to_gif(material, Image.open(dir + "/" + material), text, defaultFont, color, email)
@@ -339,7 +339,7 @@ def process_template(request, material, text, font_size, color, font, email):
         else:
             img = add_text_to_image(Image.open(dir + "/" + material), text, defaultFont, color)
             if email != "None":
-                dir = 'E:\GraduationProject\Crawler\Crawler\datas\\userEmojis'.replace('\\', '/')
+                dir = '../../GraduationProject/Crawler/Crawler/datas/userEmojis'
                 if not os.path.exists('%s/%s' % (dir, email)):
                     os.makedirs('%s/%s' % (dir, email))
                 path = '%s/%s/%s' % (dir, email, material.replace("jpg", "png"))

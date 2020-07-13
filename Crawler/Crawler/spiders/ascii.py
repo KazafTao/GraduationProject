@@ -12,7 +12,7 @@ class AsciiSpider(scrapy.Spider):
     tags = []
     count = 0
 
-    with open("E:/GraduationProject/Crawler/Crawler/datas/final.txt", "r", encoding='utf-8') as f:
+    with open("D:/MyGithubProject/GraduationProject/Crawler/Crawler/datas/final.txt", "r", encoding='utf-8') as f:
         for tag in f.readlines():
             tag = tag.strip()
             if tag:

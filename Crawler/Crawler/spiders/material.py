@@ -1,5 +1,5 @@
 import scrapy
-
+import datetime
 from items import MaterialItem
 
 
@@ -10,6 +10,8 @@ class MaterialSpider(scrapy.Spider):
     baseurl = "https://fabiaoqing.com/diy/lists/page/"
     page = 1
     start_urls = [baseurl + str(page) + ".html"]
+    start_time=datetime.datetime.now()
+
 
     def get_name_from_title(self, title):
         pos = title.find("表情包制作")
@@ -20,6 +22,14 @@ class MaterialSpider(scrapy.Spider):
         else:
             name = str
             return name
+
+    @staticmethod
+    def close(spider, reason):
+        closed = getattr(spider, 'closed', None)
+        if callable(closed):
+            endtime=datetime.datetime.now()
+            print("共花费%d秒",(spider.start_time-endtime).seconds)
+            return closed(reason)
 
     def parse(self, response):
         node_list = response.xpath("//div[@class='ui card']")

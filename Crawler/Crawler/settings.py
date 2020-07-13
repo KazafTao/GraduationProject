@@ -26,8 +26,8 @@ ROBOTSTXT_OBEY = False
 
 # 加速相关设置
 DOWNLOAD_DELAY = 0
-# CONCURRENT_REQUESTS_PER_DOMAIN = 100
-# CONCURRENT_REQUESTS_PER_IP = 100
+CONCURRENT_REQUESTS_PER_DOMAIN = 100
+CONCURRENT_REQUESTS_PER_IP = 100
 
 # Disable cookies (enabled by default)
 COOKIES_ENABLED = False
@@ -51,25 +51,25 @@ django.setup()
 # 爬取动态网页相关设置
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
-SPIDER_MIDDLEWARES = {
-    'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
-}
-
-DOWNLOADER_MIDDLEWARES = {
-    'scrapy_splash.SplashCookiesMiddleware': 723,
-    'scrapy_splash.SplashMiddleware': 725,
-    'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
-}
-# 渲染服务器地址
-SPLASH_URL = 'http://120.77.148.37:8050/'
-# 去重过滤器
-DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
-# 使用Splash的Http缓存
-HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
-
-# 返回504就再试一次
-RETRY_HTTP_CODES = [504]
-HTTPERROR_ALLOWED_CODES = [504]
+# SPIDER_MIDDLEWARES = {
+#     'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
+# }
+#
+# DOWNLOADER_MIDDLEWARES = {
+#     'scrapy_splash.SplashCookiesMiddleware': 723,
+#     'scrapy_splash.SplashMiddleware': 725,
+#     'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
+# }
+# # 渲染服务器地址
+# SPLASH_URL = 'http://120.77.148.37:8050/'
+# # 去重过滤器
+# DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
+# # 使用Splash的Http缓存
+# HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
+#
+# # 返回504就再试一次
+# RETRY_HTTP_CODES = [504]
+# HTTPERROR_ALLOWED_CODES = [504]
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
@@ -82,10 +82,10 @@ HTTPERROR_ALLOWED_CODES = [504]
 ITEM_PIPELINES = {
     # 'Crawler.pipelines.EsPipeline': 200,
     # 'Crawler.pipelines.DownloadEmojiPipeline': 100,
-    'Crawler.pipelines.AsciiPipeline': 100,
+    # 'Crawler.pipelines.AsciiPipeline': 100,
     # 'Crawler.pipelines.TagPipeline': 100,
     # 'Crawler.pipelines.DownloadEmojiSetPipeline': 100,
-    # 'Crawler.pipelines.DownloadMaterialPipeline': 100,
+    'Crawler.pipelines.DownloadMaterialPipeline': 100,
 }
 
 # PROJECT_PATH = E:\GraduationProject\Crawler\Crawler
